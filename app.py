@@ -17,6 +17,13 @@ Original file is located at
 *    (Data Scientist)
 *   Muhammad Naufal Zaidan (Data Engineer)
 """
+import subprocess
+import sys
+try:
+    import matplotlib.pyplot as plt
+except ModuleNotFoundError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+    import matplotlib.pyplot as plt
 
 import numpy as np
 import pandas as pd
